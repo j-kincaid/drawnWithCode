@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<!--
+Food drawing with inline styles by Jessica Kincaid
+July 27, 2018
+
+ -->
+
+<head>
+  <style>
+    body {
+      background-color: linen;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    #placemat {
+      background-color: thistle;
+      padding: 70vw;
+      border-radius: 10%;
+      margin: 1em;
+    }
+
+    #plate {
+      position: absolute;
+      background-color: bisque;
+      padding: 20em 20em;
+      border-radius: 50%;
+    }
+
+    #chocolate ul li {
+      position: relative;
+      background-color: chocolate;
+      margin: .25em;
+      padding: 5em;
+      border-radius: .5em;
+    }
+
+    .topping {
+      float: left;
+      background-color: blanchedalmond;
+      padding: 50em 20em 2em 1em;
+      border-radius: 30%;
+    }
+
+    #pieSlice ul li {
+      float: left;
+      background-color: mintCream;
+      padding: 6em 18em 14em 4em;
+      border-radius: 4em 15em 35em 15em;
+      border: .25em springgreen solid;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="placemat">
+    <!--child of body -->
+    <div id="plate">
+      <!--child of placemat -->
+
+      <div id="pieSlice">
+        <!-- child of plate -->
+        <div>
+
+          <ul id="chocolate">
+            <!-- child of pieSlice -->
+            <li class="topping">
+            </li>
+          </ul>
+          <!--child of pieSlice -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+  </div>
+
+</body>
+
+</html>

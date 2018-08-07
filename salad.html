@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<!--
+Food drawing with inline styles by Jessica Kincaid
+July 27, 2018
+
+ -->
+
+<head>
+  <style>
+    body {
+      background-color: linen;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    #placemat {
+      background-color: darkgoldenrod;
+      padding: 70vw;
+      border-radius: 10%;
+      margin: 1em;
+    }
+
+    #plate {
+      float: left;
+      background-color: cornsilk;
+      padding: 20em 20em;
+      border-radius: 50%;
+    }
+
+    #greens ul li {
+      display: block;
+      background-color: olive;
+      margin: .25em;
+      padding: 2em 1em .2em 20em;
+      border-radius: 30%;
+    }
+    .springgreens ul li {
+      display: block;
+      background-color: greenyellow;
+      margin: .25em;
+      padding: 2em 1em .25em 25em;
+      border-radius: 30%;
+    }
+
+    .dressing {
+      float: left;
+      background-color: blanchedalmond;
+      padding: 50em 20em 2em 1em;
+      border-radius: 30%;
+    }
+
+    #orange ul li {
+      float: left;
+      background-color: orange;
+      padding: 6em 18em 14em 4em;
+      border-radius: 4em 15em 35em 15em;
+      border: .25em springgreen solid;
+    }
+    #berries ul li {
+      display: inline-block;
+      background-color: darkred;
+      padding: 2em 1em 1em 2em;
+      border-radius: 4em 15em 35em 15em;
+      border: .25em red solid;
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="placemat">
+    <!--child of body -->
+    <div id="plate">
+  <div id="berries">
+    <!-- child of plate -->
+    <ul>
+      <li></li>
+        <li></li>
+          <li></li>
+            <li></li>
+              <li></li>
+    </ul>
+  </div>
+      <!--child of placemat -->
+
+              <div class="springgreens">
+                <!-- child of plate -->
+                <ul>
+                  <li></li>
+                    <li></li>
+                      <li></li>
+                        <li></li>
+                          <li></li>
+                </ul>
+                <div>
+      <div id="greens">
+        <!-- child of plate -->
+        <ul>
+          <li></li>
+            <li></li>
+              <li></li>
+                <li></li>
+                  <li></li>
+        </ul>
+
+        <div>
+
+          <ul id="orange">
+            <!-- child of pieSlice -->
+            <li class="dressing">
+            </li>
+          </ul>
+          <!--child of pieSlice -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+  </div>
+
+</body>
+
+</html>

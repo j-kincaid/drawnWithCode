@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<!--
+Fruit bowl with inline styles by Jessica Kincaid
+August 3, 2018
+
+With notes to help beginners.
+ -->
+
+<head>
+
+  <!--
+  ******************************************************************
+  Inline styling - Note the differences in comment formats.
+  ******************************************************************
+   -->
+  <style>
+    body {
+      background-color: saddlebrown;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    /*
+    ******************************************************************
+    id elements are identified with the # symbol
+    ******************************************************************
+     */
+
+    #bowlRim {
+      background-color: lightsteelblue;
+      width: 170em;
+      height: 100em;
+      border-radius: 55%;
+      margin: 10vw;
+      margin-top: 30vw;
+    }
+
+    /*
+    ******************************************************************
+    class elements are identified with the . symbol
+    ******************************************************************
+    */
+
+    .plate {
+      height: 70em;
+      width: 45em;
+      display: flex;
+      margin-top: 20vw;
+      margin-left: 10vw;
+      background-color: whitesmoke;
+      padding: 10em 40em;
+      border-radius: 65%;
+      border: 2em lightgray solid;
+    }
+
+    .apples {
+      position: relative;
+      margin-left: -14vw;
+    }
+
+    .apples ul {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2em;
+    }
+
+    .apples ul li {
+      background: linear-gradient(-50deg, darkred, orange);
+      padding: 18em;
+      border-radius: 45%;
+      border: .75em red solid;
+    }
+
+    /*
+    ******************************************************************
+    You can even style the individual child elements with pseudoselectors
+    ******************************************************************
+     */
+
+    .apples li:nth-child(1) {
+      background: radial-gradient(orange, darkred, gold);
+      padding: 18em;
+      border-radius: 62% 48%;
+    }
+
+    .limes {
+      position: absolute;
+      float: right;
+      margin-top: 8vw;
+      margin-left: -18vw;
+      margin-right: -18vw;
+      margin-bottom: 3vw;
+    }
+
+    .limes ul {
+      display: flex;
+    }
+
+    .limes ul li {
+      background: linear-gradient(-30deg, olive, orange);
+      padding: 18em;
+      border-radius: 47% 63%;
+      border: .5em olive solid;
+    }
+
+    .limes li:nth-child(1) {
+      background: linear-gradient(-30deg, yellowgreen, darkred);
+      padding: 16em;
+      border-radius: 62% 48%;
+    }
+
+    .limes li:nth-child(2) {
+      background: linear-gradient(-30deg, darkolivegreen, darkred);
+      padding: 16em;
+      border-radius: 54% 46%;
+    }
+
+    .oranges {
+      position: absolute;
+      float: right;
+      margin-top: 18vw;
+      margin-left: -15vw;
+      margin-right: -20vw;
+      margin-bottom: 4vw;
+    }
+
+    .oranges ul {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .oranges ul li {
+      float: right;
+      background-color: orange;
+      margin: .5em;
+      padding: 18em;
+      border-radius: 52% 48%;
+      border: 1em rgba(160, 82, 45, 0.5) solid;
+    }
+
+    .oranges li:nth-child(1) {
+      background: radial-gradient(darkgoldenrod, crimson);
+      margin-left: -1vw;
+      margin-top: 4em;
+      float: left;
+    }
+
+    .oranges li:nth-child(2) {
+      background: linear-gradient(-30deg, goldenrod, darkred);
+      margin-left: -8vw;
+      margin-top: 3em;
+      padding: 20em;
+      float: left;
+    }
+
+    .oranges li:nth-child(3) {
+      background: radial-gradient(orange, crimson);
+      margin-top: 4em;
+      margin-left: -4vw;
+    }
+
+    .oranges li:nth-child(4) {
+      background: linear-gradient(-50deg, goldenrod, darkred);
+      margin-top: 4em;
+      margin-left: -12vw;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="bowlRim">
+    <!--child of body -->
+    <div class="plate">
+      <!--child of bowlRim -->
+
+      <div class="apples">
+        <!-- child of plate -->
+        <ul>
+          <li></li>
+          <!-- child of apples -->
+          <li></li>
+          <!-- child of apples -->
+        </ul>
+      </div>
+      <div class="limes">
+        <!-- child of plate -->
+        <ul>
+          <li></li>
+          <!-- child of limes -->
+          <li></li>
+          <!-- child of limes -->
+          <li></li>
+          <!-- child of limes -->
+        </ul>
+      </div>
+      <div class="oranges">
+        <!-- child of plate -->
+        <ul>
+          <li></li>
+          <!-- child of oranges -->
+          <li></li>
+          <!-- child of oranges -->
+          <li></li>
+          <!-- child of oranges -->
+          <li></li>
+          <!-- child of oranges -->
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

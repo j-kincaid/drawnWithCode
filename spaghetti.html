@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<!--
+Food drawing with inline styles by Jessica Kincaid
+"Spaghetti"
+August 5, 2018
+ -->
+
+<head>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    #placemat {
+      background-color: darkred;
+      height: 120vw;
+      width: 120vw;
+      border-radius: 5%;
+      margin: 5em;
+    }
+
+    #plate {
+      position: absolute;
+      float: left;
+      background-color: aliceBlue;
+      height: 70%;
+      width: 75%;
+      padding-top: -15em;
+      margin-left: 4em;
+      margin-top: 4em;
+      border-radius: 45%;
+      border: 15px outset lightgray;
+    }
+
+    .pesto {
+      position: absolute;
+      margin: 0;
+    }
+
+    .pesto ul li {
+      background-color: olive;
+      margin-top: 20vw;
+      width: 15em;
+      height: 11em;
+      border-radius: 42%;
+      border: 7px outset darkolivegreen;
+    }
+
+    .filling {
+      float: left;
+      position: relative;
+      width: 4em;
+      height: 4em;
+      background-color: ivory;
+    }
+
+    .filling ul li {
+      width: 4em;
+      height: 4em;
+      border-radius: 10%;
+    }
+
+    .ravioli ul li {
+      display: inline-block;
+      background-color: palegoldenrod;
+      padding: 3.5em;
+
+      width: 4.75em;
+      height: 4.75em;
+      margin-top: 2.5vw;
+      margin-left: 4.25em;
+      border-radius: 35px;
+      border: .3em sienna solid;
+    }
+  </style>
+</head>
+
+<body>
+  <!--child of body -->
+  <div id="placemat">
+    <!-- child of placemat -->
+    <div id="plate">
+      <!-- child of plate -->
+      <div class="ravioli">
+
+        <div class="pesto">
+          <ul>
+            <li></li>
+            <li>
+              <div class="ravioli">
+                <ul>
+                  <li>
+                    <div class="filling">
+                      <ul>
+                        <li>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <div class="ravioli">
+                    <ul>
+                      <li>
+
+                        <div class="filling">
+                          <ul>
+                            <li>
+
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+            </li>
+            </ul>
+            </div>
+            </li>
+          </ul>
+
+        </div>
+
+
+
+        <!--child of placemat -->
+      </div>
+    </div>
+
+    <div class="pesto">
+      <ul>
+        <li></li>
+        <div class="ravioli">
+          <ul>
+            <li>
+
+              <div class="filling">
+                <ul>
+                  <li>
+
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+</body>
+
+</html>

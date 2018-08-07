@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body {
+      background-color: linen;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    #placemat {
+      background-color: paleGoldenrod;
+      padding: 66vw;
+      border-radius: 10%;
+      margin: 1em;
+    }
+
+    #orange {
+      background-color: orange;
+      float: right;
+      padding: 7em;
+      border-radius: 50%;
+    }
+
+    #plate {
+      position: absolute;
+      float: right;
+      background-color: cornflowerblue;
+      padding: 6em 12em 5em 9em;
+      border-radius: 50%;
+    }
+
+    #relativeRed ul li {
+      position: relative;
+
+      background-color: tomato;
+      display: block;
+      margin: .25em;
+      padding: 2em .75em .25em .1em;
+      border-radius: 2em;
+    }
+
+    .inlineGreens ul li {
+      background-color: springgreen;
+      display: inline-block;
+      margin: .25em;
+      padding: 10em .5em .15em;
+      border-radius: 1.5em;
+    }
+
+    .leftYellow ul li {
+      float: left;
+      display: inline;
+      background-color: yellow;
+      padding: 4em;
+      border-radius: 50%;
+    }
+
+    #rightWhite {
+      float: right;
+      display: block;
+      background-color: white;
+      padding: 3em;
+      border-radius: 60%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="placemat">
+    <!--child of body -->
+    <div id="orange">
+      <!--child of placemat -->
+    </div>
+    <div id="plate">
+      <!--child of placemat -->
+      <div id="rightWhite">
+        <!--child of plate -->
+        <ul>
+          <li></li>
+          <div class="leftYellow">
+            <!--child of rightWhite -->
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div id="relativeRed">
+        <!--child of plate -->
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="inlineGreens">
+        <!--child of plate -->
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
+    </div>
+    <div>
+    </div>
+
+</body>
+
+</html>
